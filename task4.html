@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Button Click</title>
+  <title>Sum of Numbers</title>
 </head>
 <body>
 
   <button id="myButton">Click me</button>
 
   <script>
-    // Event handling using addEventListener
     document.getElementById("myButton").addEventListener("click", function() {
-      console.log("Hello World");
+      let numbers = [];
+      for (let i = 0; i <= 100; i++) {
+        numbers.push(i);
+      }
+
+
+      let sum = 0;
+      for (let num of numbers) {
+        sum += num;
+      }
+
+      console.log("The sum is:", sum);
     });
   </script>
 
