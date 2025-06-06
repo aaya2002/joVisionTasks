@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Even Numbers Sum</title>
+</head>
+<body>
+
+  <button onclick="calculateEvenSum()">Click me</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateEvenSum() {
+      let numbers = [];
+      for (let i = 0; i <= 100; i++) {
+        numbers.push(i);
+      }
+
+      let evenSum = 0;
+      for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+          evenSum += numbers[i];
+        }
+      }
+
+      document.getElementById("result").textContent = "Sum of even numbers between 0 and 100 is: " + evenSum;
+    }
+  </script>
+<h1>Aya</h1>
+</body>
+</html>
